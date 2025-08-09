@@ -18,11 +18,11 @@
     ];
 
     function startTimer() {
-      alert("Timer started! You'll get a reminder every 45 minutes.");
+      alert("Timer started! You'll get a reminder every 1 minutes.");
       setInterval(() => {
         let suggestion = breakSuggestions[Math.floor(Math.random() * breakSuggestions.length)];
         alert("⏳ Time for a break! " + suggestion);
-      }, 1 * 60 * 1000); // 45 minutes
+      }, 1 * 60 * 1000); // 1 minutes
     }
   </script>
 </body>
