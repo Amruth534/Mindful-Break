@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Mindful Break Reminder</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <h1>Mindful Break Reminder</h1>
@@ -21,7 +22,7 @@
       setInterval(() => {
         let suggestion = breakSuggestions[Math.floor(Math.random() * breakSuggestions.length)];
         alert("⏳ Time for a break! " + suggestion);
-      }, 1 * 60 * 1000); // 45 minutes
+      }, 45 * 60 * 1000); // 45 minutes
     }
   </script>
 </body>
