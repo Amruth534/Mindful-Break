@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mindful Break Reminder</title>
+</head>
+<body>
+  <h1>Mindful Break Reminder</h1>
+  <button onclick="startTimer()">Start Timer</button>
+
+  <script>
+    let breakSuggestions = [
+      "Stand up and stretch for 2 minutes",
+      "Drink a glass of water",
+      "Take 10 deep breaths",
+      "Look out of the window and relax your eyes",
+      "Roll your shoulders slowly"
+    ];
+
+    function startTimer() {
+      alert("Timer started! You'll get a reminder every 45 minutes.");
+      setInterval(() => {
+        let suggestion = breakSuggestions[Math.floor(Math.random() * breakSuggestions.length)];
+        alert("⏳ Time for a break! " + suggestion);
+      }, 1 * 60 * 1000); // 45 minutes
+    }
+  </script>
+</body>
+</html>
